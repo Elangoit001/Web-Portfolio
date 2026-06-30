@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:url("1.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#191338;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:6px;
+    transition:.4s;
+}
+
+nav ul li a:hover,
+.active{
+    background:#00b894;
+}
+
+.hero{
+    text-align:center;
+    margin-top:120px;
+    color:white;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    box-shadow:0 0 20px black;
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:42px;
+}
+
+.hero h3{
+    margin-top:10px;
+    color:#ddd;
+}
+
+.page{
+    margin-top:120px;
+}
+
+.card{
+    width:80%;
+    margin:30px auto;
+    background:rgba(255,255,255,.85);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.profile{
+    display:block;
+    width:180px;
+    height:180px;
+    margin:20px auto;
+    border-radius:50%;
+    border:4px solid #191338;
+    object-fit:cover;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skills span{
+    background:#191338;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+    transition:.4s;
+}
+
+.skills span:hover{
+    background:#00b894;
+    transform:scale(1.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#191338;
+    color:white;
+}
+
+table th,
+table td{
+    border:1px solid #999;
+    padding:12px;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+.list{
+    margin-top:20px;
+    margin-left:25px;
+}
+
+.list li{
+    margin:12px 0;
+    font-size:18px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid gray;
+    font-size:16px;
+}
+
+input[type="submit"]{
+    background:#191338;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:.4s;
+}
+
+input[type="submit"]:hover{
+    background:#00b894;
+}
+
+footer{
+    background:#191338;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer a{
+    color:#00ffcc;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:white;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav ul{
+    margin-top:10px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.card{
+    width:95%;
+}
+
+.skills{
+    justify-content:center;
+}
+
+}

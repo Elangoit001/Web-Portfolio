@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ELANGO</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page">
+        <div class="card">
+
+            <h1>Contact Me</h1>
+
+            <form id="contactForm">
+
+                <input type="text" placeholder="Enter Your Name" required>
+
+                <input type="email" placeholder="Enter Your Email" required>
+
+                <input type="tel" placeholder="Enter Phone Number" required>
+
+                <textarea rows="6" placeholder="Enter Your Message" required></textarea>
+
+                <input type="submit" value="Send Message">
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Elango Poominathan</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page reload
+
+            alert("✅ Message Submitted Successfully!");
+
+            // Clear the form
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
