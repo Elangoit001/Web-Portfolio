@@ -54,14 +54,14 @@ nav ul li a:hover,
 .hero{
     text-align:center;
     margin-top:120px;
-    color:white;
+    color:rgb(234, 125, 125);
 }
 
 .hero img{
     width:180px;
     height:180px;
     border-radius:50%;
-    border:5px solid white;
+    border:5px solid rgb(247, 247, 247);
     object-fit:cover;
     box-shadow:0 0 20px black;
 }
@@ -73,7 +73,7 @@ nav ul li a:hover,
 
 .hero h3{
     margin-top:10px;
-    color:#ddd;
+    color:#9a8c8c;
 }
 
 .page{
